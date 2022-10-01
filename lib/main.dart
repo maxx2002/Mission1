@@ -35,22 +35,26 @@ class _MyHomePageState extends State<MyHomePage> {
               height: double.infinity,
               child: Column(
                 children: [
-                  Container(
-                      width: double.infinity,
-                      height: 200,
-                      child: Image.asset(
-                        'asset/img/1.jpg',
-                        fit: BoxFit.cover,
-                      )),
-                  Container(
-                      width: double.infinity,
-                      child: SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(children: [
-                          Container(
-                              width: 110,
-                              height: 110,
-                              padding: const EdgeInsets.all(5.0),
+                  Flexible(
+                    flex: 2,
+                    child: Container(
+                        width: double.infinity,
+                        height: double.infinity,
+                        child: Image.asset(
+                          'asset/img/1.jpg',
+                          fit: BoxFit.cover,
+                        )),
+                  ),
+                  Flexible(
+                    flex: 1,
+                    child: Container(
+                        child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(children: [
+                        AspectRatio(
+                          aspectRatio: 1 / 1,
+                          child: Container(
+                              padding: const EdgeInsets.all(3.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image.asset(
@@ -58,10 +62,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                   fit: BoxFit.cover,
                                 ),
                               )),
-                          Container(
-                              width: 110,
-                              height: 110,
-                              padding: const EdgeInsets.all(5.0),
+                        ),
+                        AspectRatio(
+                          aspectRatio: 1 / 1,
+                          child: Container(
+                              padding: const EdgeInsets.all(3.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image.asset(
@@ -69,10 +74,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                   fit: BoxFit.cover,
                                 ),
                               )),
-                          Container(
-                              width: 110,
-                              height: 110,
-                              padding: const EdgeInsets.all(5.0),
+                        ),
+                        AspectRatio(
+                          aspectRatio: 1 / 1,
+                          child: Container(
+                              padding: const EdgeInsets.all(3.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image.asset(
@@ -80,10 +86,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                   fit: BoxFit.cover,
                                 ),
                               )),
-                          Container(
-                              width: 110,
-                              height: 110,
-                              padding: const EdgeInsets.all(5.0),
+                        ),
+                        AspectRatio(
+                          aspectRatio: 1 / 1,
+                          child: Container(
+                              padding: const EdgeInsets.all(3.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image.asset(
@@ -91,10 +98,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                   fit: BoxFit.cover,
                                 ),
                               )),
-                          Container(
-                              width: 110,
-                              height: 110,
-                              padding: const EdgeInsets.all(5.0),
+                        ),
+                        AspectRatio(
+                          aspectRatio: 1 / 1,
+                          child: Container(
+                              padding: const EdgeInsets.all(3.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image.asset(
@@ -102,30 +110,70 @@ class _MyHomePageState extends State<MyHomePage> {
                                   fit: BoxFit.cover,
                                 ),
                               )),
-                        ]),
-                      )),
-                  Padding(
-                    padding: const EdgeInsets.all(5.0),
-                    child: Text("Bugatti Veyron",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24,
-                            color: Colors.white)),
+                        ),
+                        AspectRatio(
+                          aspectRatio: 1 / 1,
+                          child: Container(
+                              padding: const EdgeInsets.all(3.0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Image.asset(
+                                  'asset/img/7.jpg',
+                                  fit: BoxFit.cover,
+                                ),
+                              )),
+                        ),
+                      ]),
+                    )),
                   ),
-                  Expanded(
-                    child: SingleChildScrollView(
-                        scrollDirection: Axis.vertical,
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text(
-                                  "The Bugatti Veyron EB 16.4 is a mid-engine sports car, designed and developed in Germany by the Volkswagen Group and Bugatti and manufactured in Molsheim, France, by French automobile manufacturer Bugatti. It was named after the racing driver Pierre Veyron.\n\nThe original version has a top speed of 407 km/h (253 mph). It was named the 2000s Car of the Decade by the BBC television programme Top Gear. The standard Veyron also won Top Gear's Best Car Driven All Year award in 2005.\n\nThe Super Sport version of the Veyron is one of the fastest street-legal production cars in the world, with a top speed of 431.072 km/h (267.856 mph).[8] The Veyron Grand Sport Vitesse was the fastest roadster in the world, reaching an averaged top speed of 408.84 km/h (254.04 mph) in a test on 6 April 2013.\n\nThe Veyron's chief designer was Hartmut Warkuß and the exterior was designed by Jozef Kabaň of Volkswagen, with much of the engineering work being conducted under the guidance of chief technical officer Wolfgang Schreiber. The Veyron includes a sound system designed and built by Burmester Audiosysteme.\n\nSeveral special variants have been produced. In December 2010, Bugatti began offering prospective buyers the ability to customise exterior and interior colours by using the Veyron 16.4 Configurator application on the marque's official website. The Bugatti Veyron was discontinued in late 2014, but special edition models continued to be produced until 2015.",
-                                  style: TextStyle(color: Colors.white)),
-                            )
-                          ],
-                        )),
-                  )
+                  Flexible(
+                      flex: 4,
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Text("Bugatti Veyron",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                    color: Colors.white)),
+                          ),
+                          Expanded(
+                            child: ListView(children: [
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Text(
+                                    "The Bugatti Veyron EB 16.4 is a mid-engine sports car, designed and developed in Germany by the Volkswagen Group and Bugatti and manufactured in Molsheim, France, by French automobile manufacturer Bugatti. It was named after the racing driver Pierre Veyron.",
+                                    style: TextStyle(color: Colors.white)),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Text(
+                                    "The original version has a top speed of 407 km/h (253 mph). It was named the 2000s Car of the Decade by the BBC television programme Top Gear. The standard Veyron also won Top Gear's Best Car Driven All Year award in 2005.",
+                                    style: TextStyle(color: Colors.white)),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Text(
+                                    "The Super Sport version of the Veyron is one of the fastest street-legal production cars in the world, with a top speed of 431.072 km/h (267.856 mph). The Veyron Grand Sport Vitesse was the fastest roadster in the world, reaching an averaged top speed of 408.84 km/h (254.04 mph) in a test on 6 April 2013.",
+                                    style: TextStyle(color: Colors.white)),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Text(
+                                    "The Veyron's chief designer was Hartmut Warkuß and the exterior was designed by Jozef Kabaň of Volkswagen, with much of the engineering work being conducted under the guidance of chief technical officer Wolfgang Schreiber. The Veyron includes a sound system designed and built by Burmester Audiosysteme.",
+                                    style: TextStyle(color: Colors.white)),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                child: Text(
+                                    "Several special variants have been produced. In December 2010, Bugatti began offering prospective buyers the ability to customise exterior and interior colours by using the Veyron 16.4 Configurator application on the marque's official website. The Bugatti Veyron was discontinued in late 2014, but special edition models continued to be produced until 2015.",
+                                    style: TextStyle(color: Colors.white)),
+                              ),
+                            ]),
+                          )
+                        ],
+                      ))
                 ],
               ),
               decoration: BoxDecoration(
